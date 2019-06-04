@@ -1,0 +1,142 @@
+﻿.nav-md .container.body .col-md-3.left_col {
+	min-height: 100%;
+	width: 230px;
+	padding: 0;
+	position: absolute;
+	display: -ms-flexbox;
+	display: flex;
+	z-index: 1
+}
+
+body .container.body .right_col {
+	background: #F7F7F7
+}
+
+.nav-md .container.body .right_col {
+	padding: 10px 20px 0;
+	margin-left: 230px
+}
+
+.nav_title {
+	width: 230px;
+	float: left;
+	background: #2A3F54;
+	border-radius: 0;
+	height: 57px
+}
+
+@media ( max-width : 991px) {
+	.nav-md .container.body .right_col, .nav-md .container.body .top_nav {
+		width: 100%;
+		margin: 0
+	}
+	.nav-md .container.body .col-md-3.left_col {
+		display: none
+	}
+	.nav-md .container.body .right_col {
+		width: 100%;
+		padding-right: 0
+	}
+	.right_col {
+		padding: 10px !important
+	}
+}
+@media ( max-width : 1200px) {
+	.x_title h2 {
+		width: 62%;
+		font-size: 17px
+	}
+}
+
+@media ( max-width : 1270px) and (min-width: 192px) {
+	.x_title h2 small {
+		display: none
+	}
+}
+
+.container {
+	width: 100%;
+	padding: 0
+}
+
+.navbar-nav>li>a, .navbar-nav>li>a {
+	color: #fff !important
+}
+
+.top_nav .nav>li>a:focus, .top_nav .nav>li>a:hover {
+	background: #D9DEE4
+}
+.login_wrapper {
+	right: 0px;
+	margin: 0px auto;
+	margin-top: 5%;
+	max-width: 350px;
+	position: relative
+}
+
+ .login_form {
+	position: absolute;
+	top: 0px;
+	width: 100%
+}
+
+.login_form {
+	z-index: 22
+}
+.site_title i {
+	border: 1px solid #EAEAEA;
+	padding: 5px 6px;
+	border-radius: 50%
+}
+
+.site_title img {
+	max-height: 66px;
+	max-width: 180px;
+}
+.site_title {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-weight: 400;
+	font-size: 22px;
+	width: 100%;
+	color: #ECF0F1 !important;
+	margin-left: 0 !important;
+	line-height: 59px;
+	display: block;
+	height: 55px;
+	margin: 0;
+	padding-left: 10px
+}
+
+.site_title:hover, .site_title:focus {
+	text-decoration: none
+}
+.sidebar-footer {
+	bottom: 0px;
+	clear: both;
+	display: block;
+	padding: 5px 0 0 0;
+	position: fixed;
+	width: 230px;
+	z-index: 999;
+}
+
+.sidebar-footer a {
+	padding: 7px 0 3px;
+	text-align: center;
+	width: 25%;
+	font-size: 17px;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+
+.sidebar-footer a:hover {
+	background: #D9DEE4
+}
+
+@media ( min-width : 992px) {
+	footer {
+		margin-left: 230px
+	}
+}

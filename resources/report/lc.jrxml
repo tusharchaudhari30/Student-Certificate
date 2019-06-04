@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="16b311c8-f733-4fdd-874a-947c6f17fe44">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="first_name" class="java.lang.String"/>
+	<field name="middle_name" class="java.lang.String"/>
+	<field name="last_name" class="java.lang.String"/>
+	<field name="parent_name" class="java.lang.String"/>
+	<field name="admission_date" class="java.util.Date"/>
+	<field name="branch" class="java.lang.String"/>
+	<field name="current_year" class="java.lang.Integer"/>
+	<field name="enroll_no" class="java.lang.Integer"/>
+	<field name="mother_name" class="java.lang.String"/>
+	<field name="subcast" class="java.lang.String"/>
+	<field name="nationality" class="java.lang.String"/>
+	<field name="place_of_birth" class="java.lang.String"/>
+	<field name="date_of_birth" class="java.util.Date"/>
+	<field name="last_institute" class="java.lang.String"/>
+	<field name="progress" class="java.lang.String"/>
+	<field name="conduct" class="java.lang.String"/>
+	<field name="result_leave" class="java.lang.String"/>
+	<field name="reason_leave" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="638" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="170" width="220" height="25" uuid="1d5e271f-05e6-427a-9947-71b30d4a5172"/>
+				<box padding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<text><![CDATA[Mothers Name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="140" width="289" height="29" uuid="33b0183b-521b-4ec0-9e8c-07220bb2f466"/>
+				<box padding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{first_name}+" "+$F{middle_name}+" "+$F{last_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="140" width="220" height="30" uuid="8f45c9fd-494c-4a80-a0c6-99af6212e316"/>
+				<box padding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="169" width="289" height="26" uuid="9afba5c4-7124-42e5-ac4d-b88ed6ce84a3"/>
+				<box padding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mother_name}+" "+$F{middle_name}+" "+$F{last_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="195" width="220" height="30" uuid="025ff67f-66aa-4493-afef-dd05f7d9f55f"/>
+				<box padding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<text><![CDATA[Cast]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="195" width="289" height="30" uuid="f0a92272-d69c-4606-a73d-fbe77397a4a1"/>
+				<box padding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{subcast}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="225" width="289" height="28" uuid="d4cd3e06-b6ea-4cc6-83c6-0a2f1d95c8ad"/>
+				<box padding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nationality}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="225" width="220" height="29" uuid="1722c218-6cd8-419d-a803-3a5533e34d86"/>
+				<box padding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<text><![CDATA[Nationality]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="253" width="289" height="31" uuid="d278373b-eb5e-4272-9c29-625ce99d473e"/>
+				<box padding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{place_of_birth}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="254" width="220" height="30" uuid="1df21e39-4624-4389-a7b6-883fcc36d466"/>
+				<box padding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<text><![CDATA[Place of Birth]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="284" width="289" height="30" uuid="a213acef-8e06-43a8-b1cd-b6e485186ee8"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("MM/dd/yyyy").format($F{date_of_birth})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="284" width="220" height="30" uuid="ee05f40a-3a7f-4360-8225-10750ba0d017"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<text><![CDATA[Date of Birth]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="314" width="289" height="30" uuid="85765f28-3ec4-49cc-92b2-b3dc30cfef81"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{last_institute}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="314" width="220" height="30" uuid="2205587c-5ac5-47e8-a7de-b1affe3f8337"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<text><![CDATA[Last Institute]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="344" width="289" height="30" uuid="2172a04e-bf57-433f-bccb-b20da0402e96"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{admission_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="344" width="220" height="30" uuid="b7a2d988-c5a3-4478-8588-fae5b36b5ba9"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<text><![CDATA[Admission Date :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="374" width="289" height="30" uuid="10b2e361-0843-4584-99d5-0a11f8a9c5d4"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{progress}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="374" width="220" height="30" uuid="b2ad9d6a-33bc-4559-a707-a09847056169"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<text><![CDATA[Progress]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="404" width="289" height="30" uuid="614b7933-b3f8-4105-b90e-c9755700559f"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{conduct}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="404" width="220" height="30" uuid="b104cfd9-61ef-4efb-ba6f-3a7f45b37988"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+					<paragraph lineSpacingSize="1.0"/>
+				</textElement>
+				<text><![CDATA[Conduct:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="434" width="289" height="30" uuid="6e5d6b6f-0f17-466d-8823-efdc895a3be4"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{result_leave}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="ContainerBottom" x="30" y="434" width="220" height="30" uuid="ed10d3c2-9b0b-4e80-a03d-020e8ee942de"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+					<paragraph lineSpacingSize="1.0"/>
+				</textElement>
+				<text><![CDATA[Reasult Leave :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="250" y="464" width="289" height="30" uuid="6b0de14a-2a34-47df-a89e-cfea745c1812"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reason_leave}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="464" width="220" height="30" uuid="ca7f7099-bb6e-4b69-9941-0b005fbb5cbe"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12"/>
+					<paragraph lineSpacingSize="1.0"/>
+				</textElement>
+				<text><![CDATA[Reason leave]]></text>
+			</staticText>
+			<line>
+				<reportElement x="552" y="0" width="1" height="630" uuid="6424732e-1116-48ec-8cd3-c44fbf2803ca"/>
+			</line>
+			<ellipse>
+				<reportElement x="90" y="550" width="122" height="53" uuid="557a855e-5e61-4157-a25b-ae7515b73ba0"/>
+			</ellipse>
+			<staticText>
+				<reportElement x="105" y="562" width="100" height="30" uuid="0c61975d-63ca-4753-a266-722aaf4d5a04"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="16"/>
+				</textElement>
+				<text><![CDATA[Seal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="562" width="130" height="28" uuid="5297d9a1-7cde-44ca-90a2-5e1952dba4c9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Cambria Math" size="18"/>
+				</textElement>
+				<text><![CDATA[PRINCIPAL]]></text>
+			</staticText>
+			<image>
+				<reportElement x="20" y="40" width="80" height="70" uuid="7d1deef8-99fa-4e42-9850-13c962e10334"/>
+				<imageExpression><![CDATA["C:/Users/Spydi/Downloads/logoraisoni.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="110" y="40" width="340" height="30" uuid="85035373-9903-4027-bd1d-331ce0cbacf4"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[G. H. RAISONI POLYTECHNIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="60" width="260" height="30" uuid="e90c6121-8bda-4c57-bda3-30991b9300c3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[Gat No. 269,A.P. Savkheda (Bk.), Jalgoan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="159" y="89" width="230" height="30" uuid="ce5ef9c0-0af3-4e48-8e33-20439082e60c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Leaving Certificate]]></text>
+			</staticText>
+			<image>
+				<reportElement x="430" y="40" width="110" height="70" uuid="b75a6322-ee20-4898-8999-b865c501105e"/>
+				<imageExpression><![CDATA["C:/Users/Spydi/Downloads/raisonigroup.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="2" y="0" width="1" height="630" uuid="f5e918fd-2a87-4956-aed5-18d00c68cffd"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="550" height="1" uuid="ddc80492-defd-4f4d-b138-d7f630e10dde"/>
+			</line>
+			<line>
+				<reportElement x="2" y="630" width="550" height="1" uuid="3bf48d97-d5c2-4bbe-aaf7-84e0bff66bad"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

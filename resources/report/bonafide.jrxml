@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bonafide" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9692e8b9-91a3-4632-8402-5067c17cfc0f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from student;]]>
+	</queryString>
+	<field name="first_name" class="java.lang.String"/>
+	<field name="middle_name" class="java.lang.String"/>
+	<field name="last_name" class="java.lang.String"/>
+	<field name="parent_name" class="java.lang.String"/>
+	<field name="admission_date" class="java.util.Date"/>
+	<field name="branch" class="java.lang.String"/>
+	<field name="current_year" class="java.lang.Integer"/>
+	<field name="heshe" class="java.lang.String"/>
+	<field name="mrms" class="java.lang.String"/>
+	<field name="dependent" class="java.lang.String"/>
+	<field name="ref_no" class="java.lang.Integer"/>
+	<field name="stud_id" class="java.lang.Integer"/>
+	<field name="date_time" class="java.util.Date"/>
+	<variable name="Paragraph" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="14" splitType="Stretch">
+			<line>
+				<reportElement x="1" y="0" width="558" height="1" uuid="95acc8ce-d411-4f4d-9d35-f2b7ee7206cd"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="116" splitType="Stretch">
+			<staticText>
+				<reportElement x="175" y="50" width="230" height="30" uuid="07c91ba7-20d6-4a23-abf6-624f545a5f29"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[BONAFIDE CERTIFICATE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="20" width="260" height="30" uuid="5265a149-2d41-403e-aa90-93c62700fadb"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[Gat No. 269,A.P. Savkheda (Bk.), Jalgoan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="340" height="30" uuid="1452a7f1-c439-4eb6-9cd3-3b8b28018f10"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[G. H. RAISONI POLYTECHNIC]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="400" y="90" width="121" height="24" uuid="abf184ee-3c8f-4772-8f92-f1590cd34c65"/>
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="Fixed"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="70" width="130" height="30" uuid="59ff1fcf-557e-4392-adf6-e4527d013885"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Reference no :"+$F{ref_no}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="30" y="0" width="80" height="70" uuid="98d148dc-e783-4021-8b7e-2e09ee665710"/>
+				<imageExpression><![CDATA["C:/Users/Spydi/Downloads/logoraisoni.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="440" y="0" width="110" height="70" uuid="8cc9ce90-b590-4092-a7fd-5232c60d3e0a"/>
+				<imageExpression><![CDATA["C:/Users/Spydi/Downloads/raisonigroup.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="594" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="10" width="535" height="70" uuid="16ff8852-6b7e-405c-8a79-bdb61cc5d5f9"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["           "+"This is to Certify that "+$F{mrms}+" "+$F{first_name}+" "+$F{middle_name}+" "+$F{last_name}+" Dependent of  "+$F{parent_name}+" is the bonafide student of this Institute. "+	$F{heshe}+" is admitted in this institute on Date :-"+new SimpleDateFormat("MM/dd/yyyy").format($F{admission_date})+" in the "+$F{branch} +" diploma Cource of 3 Year Duration."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="90" width="534" height="42" uuid="1eba9dc8-da96-4d32-8594-f3786bc5827c"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{heshe}+" is a student of "+$F{current_year}+" year of the course for the academic Year 2018-19 ."]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="70" y="200" width="122" height="53" uuid="4a739b89-7cc7-4c24-89e5-25416716c83e"/>
+			</ellipse>
+			<staticText>
+				<reportElement x="85" y="212" width="100" height="30" uuid="9efd301a-9137-435e-90fb-7ae842a525d7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="16"/>
+				</textElement>
+				<text><![CDATA[Seal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="212" width="130" height="28" uuid="f99cac7d-059a-4c97-bfdb-5218738a8b99"/>
+				<textElement textAlignment="Center">
+					<font fontName="Cambria Math" size="18"/>
+				</textElement>
+				<text><![CDATA[PRINCIPAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="132" width="534" height="47" uuid="d8cd0d2b-eca9-48f1-a906-55ea080d4ab3"/>
+				<textElement textAlignment="Left">
+					<font fontName="Calibri" size="14"/>
+					<paragraph lineSpacing="AtLeast"/>
+				</textElement>
+				<textFieldExpression><![CDATA["The Centre is affilated to M.S.B.T.E & recognized by Govt. of Maharashtra. "
++$F{heshe}+" is not receiving any scholarship from this institute of from any other source ."]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="4" y="-130" width="1" height="710" uuid="9ee8be45-06ce-4ba5-8cbc-1815cfe7055d"/>
+			</line>
+			<line>
+				<reportElement x="4" y="300" width="557" height="1" uuid="bc09a519-b049-46ce-b312-f87b1f68eacd"/>
+			</line>
+			<line>
+				<reportElement x="559" y="-129" width="1" height="708" uuid="a7f2b822-cb08-42b0-b16a-b82c87f1a32a"/>
+			</line>
+			<line>
+				<reportElement x="2" y="580" width="557" height="1" uuid="8a19a1ba-cce1-412b-b541-0060adcc8edf"/>
+			</line>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="410" y="310" width="121" height="24" uuid="1f58f6cc-fd37-4644-81dd-b6ed8c51d1f9"/>
+				<textElement>
+					<font size="12"/>
+					<paragraph lineSpacing="Fixed"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="430" width="339" height="30" uuid="d40bebb6-3e78-4030-acd2-4a616925c565"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" "+$F{first_name}+" "+$F{middle_name}+" "+$F{last_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="81" y="430" width="100" height="30" uuid="ee7372f7-4384-4073-b059-9b28a08e4194"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[Name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="181" y="400" width="100" height="30" uuid="404005e1-c6a7-4522-b1ed-60a05802e6a9"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ref_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="81" y="400" width="100" height="30" uuid="9bb0fe2c-7adc-4c23-8476-6774c0df8747"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[Refrance no :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="182" y="460" width="278" height="30" uuid="f79c665e-2b4d-4daf-94b9-e3195b2ef914"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{parent_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="82" y="460" width="100" height="30" uuid="5b6a5e66-d347-40ae-973e-865c41bf5a76"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[parent name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="181" y="490" width="100" height="30" uuid="4269c716-1df5-44a2-9210-efb0d8f12f2c"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{branch}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="81" y="490" width="100" height="30" uuid="31c86e0f-bd96-4b2d-a5c4-95aeca804e3f"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[branch :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="182" y="520" width="100" height="30" uuid="478fdd84-f611-4879-984a-43e141558b77"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stud_id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="82" y="520" width="100" height="30" uuid="4ea1a6c4-5c08-4667-bd79-b37cb73aa1c6"/>
+				<textElement>
+					<font fontName="Calibri" size="14"/>
+				</textElement>
+				<text><![CDATA[Enrollment no. :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="340" width="230" height="30" uuid="d8bfc444-17c1-4dfb-8dc5-f9f55675231c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[RECEIPT]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
