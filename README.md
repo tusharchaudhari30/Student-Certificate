@@ -12,8 +12,8 @@ You should have MySql database installed in System with Java and eclipse
 
 ### Installing
 
-1) Before importing project You need to install and Config Tomcat in eclipse For more information [see](https://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.stardust.docs.wst%2Fhtml%2Fwst-integration%2Fconfiguration.html).
-2)You can configure Database Password and other properties in /web-inf/spring/appServelet/Servelet-context.xml as shown bellow
+1. Before importing project You need to install and Config Tomcat in eclipse For more information [see](https://help.eclipse.org/neon/index.jsp?topic=%2Forg.eclipse.stardust.docs.wst%2Fhtml%2Fwst-integration%2Fconfiguration.html).
+2.You can configure Database Password and other properties in /web-inf/spring/appServelet/Servelet-context.xml as shown bellow
 
 ```
 <beans:bean id="dataSource"
@@ -26,7 +26,7 @@ You should have MySql database installed in System with Java and eclipse
 		<beans:property name="password" value="root" />
 	</beans:bean>
 ```
-3)After all configuration Run project in Eclipse.
+3.After all configuration Run project in Eclipse.
 
 ## Project Breif Information
   This Project is final year Project for diploma and engineering student.This Project help student to Learn the
@@ -34,10 +34,10 @@ You should have MySql database installed in System with Java and eclipse
   by College to Manage Students Data and save human efforts of creating certificates. This Project helps to track record of certificate
   and maintain college rules.
   
-  1)Counting and keep Track of how many certificates has been printed.
-  2)Leaving Certificate of student can only be created if he is in last year.
-  3)Bonafide cannot be created of Drop out Students.
-  4)LC will be Created for first time only copy of lc is created after that.
+  1.Counting and keep Track of how many certificates has been printed.
+  2.Leaving Certificate of student can only be created if he is in last year.
+  3.Bonafide cannot be created of Drop out Students.
+  4.LC will be Created for first time only copy of lc is created after that.
   
 # About
  For More information and help in Project Mail me blazeric30@gmail.com
