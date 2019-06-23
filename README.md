@@ -41,8 +41,10 @@ You should have MySql database installed in System with Java and eclipse
   3. Bonafide cannot be created of Drop out Students.
   4. LC will be Created for first time only copy of lc is created after that.
   
+## Snap-Shots
+![Image of Yaktocat](https://github.com/tusharchaudhari30/Student-Certificate/blob/master/snapshot-student/homepage.png)
+
 # About
  For More information and help in Project Mail me blazeric30@gmail.com
-  
   
   
