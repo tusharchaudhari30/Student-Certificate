@@ -42,6 +42,6 @@ You should have MySQL database installed in System with Java and eclipse
 ![Image of Yaktocat](https://github.com/tusharchaudhari30/Student-Certificate/blob/master/snapshot-student/homepage.png)
 
 # About
- For More information and help in Project Mail me blazeric30@gmail.com
+ For More information and help in Project Mail me chaudharitushar2077@gmail.com
   
   
