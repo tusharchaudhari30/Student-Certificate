@@ -1,4 +1,4 @@
-# Online College Certificate Generation
+# Online College Certificate Generation awesome
 
 This is the Diploma and Engineering Final Year Project.
 
